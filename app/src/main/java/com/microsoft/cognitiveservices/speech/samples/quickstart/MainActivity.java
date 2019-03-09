@@ -19,9 +19,9 @@ import static android.Manifest.permission.*;
 public class MainActivity extends AppCompatActivity {
 
     // Replace below with your own subscription key
-    private static String speechSubscriptionKey = "key";
+    private static String speechSubscriptionKey = Key.key;
     // Replace below with your own service region (e.g., "westus").
-    private static String serviceRegion = "region";
+    private static String serviceRegion = "northeurope";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
