@@ -5,51 +5,56 @@
     tools:context=".MainActivity"
     android:transitionGroup="true">
 
-    <TextView android:text="Text to Speech" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textview"
-        android:textSize="35dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tutorials point"
-        android:id="@+id/textView"
-        android:layout_below="@+id/textview"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ff7aff24"
-        android:textSize="35dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_centerHorizontal="true"
-        android:theme="@style/Base.TextAppearance.AppCompat" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="46dp"
-        android:hint="Enter Text"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textColor="#ff7aff10"
-        android:textColorHint="#ffff23d1" />
+        android:layout_alignParentTop="true"
+        android:background="#F0CFC4"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text to Speech"
-        android:id="@+id/button"
-        android:layout_below="@+id/editText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp" />
+       android:id="@+id/doctorButton"
+       android:layout_width="299dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginStart="29dp"
+       android:layout_marginTop="139dp"
+       android:text="Doctor"
+        android:layout_centerHorizontal="true"/>
+
+   <Button
+       android:id="@+id/hairdresserButton"
+       android:layout_width="299dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginStart="29dp"
+       android:layout_marginTop="200dp"
+       android:text="Hair Dresser" />
+
+   <Button
+       android:id="@+id/restaurantsButton"
+       android:layout_width="299dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginStart="29dp"
+       android:layout_marginTop="261dp"
+       android:text="Restaurants" />
+
+   <Button
+       android:id="@+id/friendsButton"
+       android:layout_width="299dp"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginStart="29dp"
+       android:layout_marginTop="322dp"
+       android:text="Friend" />
 
 </RelativeLayout>
