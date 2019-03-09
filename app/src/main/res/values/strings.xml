@@ -1,3 +1,8 @@
+<!--<resources>-->
+    <!--<string name="app_name">Quickstart</string>-->
+<!--</resources>-->
+
+
 <resources>
-    <string name="app_name">Quickstart</string>
+    <string name="app_name">My Application</string>
 </resources>
