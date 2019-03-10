@@ -27,6 +27,21 @@
         android:layout_alignParentEnd="true"
         android:focusable="true" />
 
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="55dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/call_icon"
+        android:tint="@color/fui_bgPhone"
+        android:onClick="onSpeechButtonClicked"/>
+
+
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,7 +71,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="300dp"
+        android:layout_marginStart="300dp"
         android:layout_marginTop="70dp"
         android:id="@+id/newMessage"/>
 
@@ -64,6 +79,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/reply"/>
+        android:layout_marginStart="20dp"
+        android:id="@+id/speech"/>
 </RelativeLayout>
