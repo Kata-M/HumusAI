@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -23,6 +24,11 @@ public class FormDetailsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_details);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("call4all");
+        toolbar.setTitleMargin(500, 2, 500, 2);
+
 
         TextView text = (TextView) findViewById(R.id.formDetails);
         EditText phoneNumberField = (EditText) findViewById(R.id.phoneNumber);

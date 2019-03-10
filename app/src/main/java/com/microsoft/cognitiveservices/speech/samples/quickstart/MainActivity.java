@@ -43,8 +43,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setTitle("Call4All");
+        toolbar.setTitle("call4all");
+        toolbar.setTitleMargin(400, 2, 0, 2);
 
         doctorButton = (Button) findViewById(R.id.doctorButton);
         hairdresserButton = (Button) findViewById(R.id.hairdresserButton);

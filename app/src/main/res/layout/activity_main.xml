@@ -17,44 +17,44 @@
         android:theme="?attr/actionBarTheme" />
 
     <Button
-       android:id="@+id/doctorButton"
-       android:layout_width="299dp"
-       android:layout_height="wrap_content"
-       android:layout_alignParentStart="true"
-       android:layout_alignParentTop="true"
-       android:layout_marginStart="29dp"
-       android:layout_marginTop="139dp"
-       android:text="Doctor"
-        android:layout_centerHorizontal="true"/>
+        android:id="@+id/doctorButton"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="203dp"
+        android:text="Doctor" />
 
-   <Button
-       android:id="@+id/hairdresserButton"
-       android:layout_width="299dp"
-       android:layout_height="wrap_content"
-       android:layout_alignParentStart="true"
-       android:layout_alignParentTop="true"
-       android:layout_marginStart="29dp"
-       android:layout_marginTop="200dp"
-       android:text="Hair Dresser" />
+    <Button
+        android:id="@+id/hairdresserButton"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="264dp"
+        android:text="Hair Dresser" />
 
-   <Button
-       android:id="@+id/restaurantsButton"
-       android:layout_width="299dp"
-       android:layout_height="wrap_content"
-       android:layout_alignParentStart="true"
-       android:layout_alignParentTop="true"
-       android:layout_marginStart="29dp"
-       android:layout_marginTop="261dp"
-       android:text="Restaurants" />
+    <Button
+        android:id="@+id/restaurantsButton"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="325dp"
+        android:text="Restaurants" />
 
-   <Button
-       android:id="@+id/friendsButton"
-       android:layout_width="299dp"
-       android:layout_height="wrap_content"
-       android:layout_alignParentStart="true"
-       android:layout_alignParentTop="true"
-       android:layout_marginStart="29dp"
-       android:layout_marginTop="322dp"
-       android:text="Friend" />
+    <Button
+        android:id="@+id/friendsButton"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="386dp"
+        android:text="Friend" />
 
 </RelativeLayout>
