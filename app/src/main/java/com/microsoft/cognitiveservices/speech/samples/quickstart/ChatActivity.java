@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -49,22 +50,25 @@ public class ChatActivity extends AppCompatActivity {
         myRef = database.getReference("message");
         myRecords = database.getReference("records");
 
-        Button fab = (Button) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                EditText input = (EditText) findViewById(R.id.input);
+        ImageButton fab = (ImageButton) findViewById(R.id.fab);
+        fab.setOnClickListener((view) -> {
+            EditText input = (EditText) findViewById(R.id.input);
 
-                // Read the input field and push a new instance
-                // of ChatMessage to the Firebase database
-                myRef.push().setValue(new ChatMessage(input.getText().toString(),
-                        FirebaseAuth.getInstance()
-                                .getCurrentUser()
-                                .getDisplayName()));
-                // Clear the input
-                input.setText("");
-            }
+            // Read the input field and push a new instance
+            // of ChatMessage to the Firebase database
+            myRef.push().setValue(new ChatMessage(input.getText().toString(),
+                    FirebaseAuth.getInstance()
+                            .getCurrentUser()
+                            .getDisplayName()));
+            // Clear the input
+            input.setText("");
         });
+
+        Button record = (Button) findViewById(R.id.record);
+        record.setOnClickListener((view) -> {
+            onSpeechButtonClicked(view);
+        });
+
 
         // Read from the database
         myRef.addChildEventListener(new ChildEventListener() {

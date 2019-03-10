@@ -16,11 +16,11 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
 
-    <Button
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:src="@drawable/call_icon"
+        android:src="@drawable/send"
         android:id="@+id/fab"
         android:tint="@android:color/white"
         android:layout_alignParentBottom="true"
@@ -37,7 +37,7 @@
         android:layout_marginBottom="55dp"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/call_icon"
+        android:src="@drawable/micro"
         android:tint="@color/fui_bgPhone"
         android:onClick="onSpeechButtonClicked"/>
 
