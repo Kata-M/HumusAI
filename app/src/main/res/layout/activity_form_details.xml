@@ -69,7 +69,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="51dp"
         android:layout_marginTop="429dp"
-        android:hint="Prefferend time of booking" />
+        android:hint="Proffered time of booking" />
 
     <ImageButton
         android:id="@+id/callButton"
